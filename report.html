@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Report Item - Campus Lost & Found</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="brand">
+            🔎 Campus Lost & Found
+        </div>
+
+        <div class="nav-links">
+
+            <a href="report.html">
+                Report
+            </a>
+
+            <a href="history.html">
+                History
+            </a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="page-container">
+
+        <div class="welcome-section">
+
+            <div>
+
+                <p class="small-title">
+                    CAMPUS COMMUNITY
+                </p>
+
+                <h1>
+                    Report a Lost or Found Item
+                </h1>
+
+                <p>
+                    Help your campus community reconnect
+                    with their belongings.
+                </p>
+
+            </div>
+
+            <div class="welcome-icon">
+                🎒
+            </div>
+
+        </div>
+
+
+        <div class="report-card">
+
+            <div class="form-header">
+
+                <h2>Item Details</h2>
+
+                <span>
+                    📝 New Report
+                </span>
+
+            </div>
+
+
+            <form id="reportForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Report Type *</label>
+
+                        <select id="type" required>
+
+                            <option value="">
+                                Select type
+                            </option>
+
+                            <option value="Lost">
+                                🔴 Lost Item
+                            </option>
+
+                            <option value="Found">
+                                🟢 Found Item
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Item Name *</label>
+
+                        <input
+                            type="text"
+                            id="item_name"
+                            placeholder="Eg. Black Wallet"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Category *</label>
+
+                        <select id="category" required>
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option>Electronics</option>
+                            <option>Documents</option>
+                            <option>Wallet / Money</option>
+                            <option>Books</option>
+                            <option>Clothing</option>
+                            <option>Accessories</option>
+                            <option>Keys</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Date *</label>
+
+                        <input
+                            type="date"
+                            id="item_date"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Location *</label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Eg. Library 2nd Floor"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Description</label>
+
+                    <textarea
+                        id="description"
+                        rows="4"
+                        placeholder="Describe the item, colour, special marks etc."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Contact Details *</label>
+
+                    <input
+                        type="text"
+                        id="contact"
+                        placeholder="Phone number or email"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    class="submit-button"
+                    type="submit"
+                >
+                    📢 Submit Report
+                </button>
+
+                <p id="reportMessage"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/report.js"></script>
+
+</body>
+
+</html>

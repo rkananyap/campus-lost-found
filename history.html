@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>History - Campus Lost & Found</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="brand">
+            🔎 Campus Lost & Found
+        </div>
+
+        <div class="nav-links">
+
+            <a href="report.html">
+                Report
+            </a>
+
+            <a href="history.html">
+                History
+            </a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="page-container">
+
+        <div class="history-header">
+
+            <div>
+
+                <p class="small-title">
+                    CAMPUS RECORDS
+                </p>
+
+                <h1>
+                    Lost & Found History
+                </h1>
+
+                <p>
+                    Search and manage reported items.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search item, location or category..."
+            >
+
+
+            <select id="filterType">
+
+                <option value="All">
+                    All Reports
+                </option>
+
+                <option value="Lost">
+                    Lost
+                </option>
+
+                <option value="Found">
+                    Found
+                </option>
+
+            </select>
+
+
+            <select id="filterStatus">
+
+                <option value="All">
+                    All Status
+                </option>
+
+                <option value="Active">
+                    Active
+                </option>
+
+                <option value="Recovered">
+                    Recovered
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div id="itemsContainer"
+             class="items-grid">
+
+        </div>
+
+    </main>
+
+
+    <script src="js/history.js"></script>
+
+</body>
+
+</html>
